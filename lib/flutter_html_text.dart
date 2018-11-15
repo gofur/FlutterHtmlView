@@ -5,11 +5,10 @@ import 'package:url_launcher/url_launcher.dart';
 
 class HtmlText extends StatelessWidget {
   final String data;
-  final Widget style;
 
   BuildContext ctx;
 
-  HtmlText({this.data, this.style});
+  HtmlText({this.data});
 
   void _launchURL(String url) async {
     try {
@@ -61,7 +60,7 @@ class HtmlText extends StatelessWidget {
 
     return new Container(
         padding:
-            const EdgeInsets.only(top: 2.0, left: 8.0, right: 8.0, bottom: 2.0),
+            const EdgeInsets.only(top: 2.0,  bottom: 2.0),
         child: contents);
   }
 
@@ -425,7 +424,7 @@ class HtmlParser {
     String param;
     String value;
 
-    TextStyle defaultTextStyle = DefaultTextStyle.of(context).style;
+    TextStyle defaultTextStyle =  Theme.of(context).textTheme.body2;
 
     double fontSize = defaultTextStyle.fontSize;
     Color color = defaultTextStyle.color;
