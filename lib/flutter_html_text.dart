@@ -146,13 +146,13 @@ class HtmlParser {
     'iframe',
     'ins',
     'isindex',
-//     'li',
+    'li',
     'map',
     'menu',
     'noframes',
     'noscript',
     'object',
-//     'ol',
+    'ol',
     'p',
     'pre',
     'script',
@@ -163,7 +163,7 @@ class HtmlParser {
     'th',
     'thead',
     'tr',
-//     'ul'
+    'ul'
   ];
   final List _inlineTags = const [
     'a',
@@ -211,7 +211,7 @@ class HtmlParser {
     'colgroup',
     'dd',
     'dt',
-//     'li',
+    'li',
     'options',
     'p',
     'td',
