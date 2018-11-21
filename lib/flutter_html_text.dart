@@ -211,7 +211,7 @@ class HtmlParser {
     'colgroup',
     'dd',
     'dt',
-    'li',
+//     'li',
     'options',
     'p',
     'td',
