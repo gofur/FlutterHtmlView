@@ -163,7 +163,7 @@ class HtmlParser {
     'th',
     'thead',
     'tr',
-    'ul'
+//     'ul'
   ];
   final List _inlineTags = const [
     'a',
