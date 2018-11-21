@@ -319,9 +319,9 @@ class HtmlParser {
 
         html = html.replaceAllMapped(re, (Match match) {
           String text = match[0]
-            ..replaceAll(new RegExp('<!--(.*?)-->'), '\$1'),
+            ..replaceAll(new RegExp('<!--(.*?)-->'), '\$1')
             ..replaceAll('&nbsp;', ' ')
-            ..replaceAll('<br />', '<br>')  
+            ..replaceAll('<br />', '<br>')
             ..replaceAll(new RegExp('<!\[CDATA\[(.*?)]]>'), '\$1');
 
           this._appendNode(text);
