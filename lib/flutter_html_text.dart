@@ -146,13 +146,13 @@ class HtmlParser {
     'iframe',
     'ins',
     'isindex',
-//     'li',
+    'li',
     'map',
     'menu',
     'noframes',
     'noscript',
     'object',
-//     'ol',
+    'ol',
     'p',
     'pre',
     'script',
@@ -213,7 +213,7 @@ class HtmlParser {
     'colgroup',
     'dd',
     'dt',
-//     'li',
+    'li',
     'options',
     'p',
     'td',
@@ -321,6 +321,7 @@ class HtmlParser {
           String text = match[0]
             ..replaceAll(new RegExp('<!--(.*?)-->'), '\$1'),
             ..replaceAll('&nbsp;', ' ')
+            ..replaceAll('<li>','&bull;')
             ..replaceAll('<br />', '<br>')  
             ..replaceAll(new RegExp('<!\[CDATA\[(.*?)]]>'), '\$1');
 
