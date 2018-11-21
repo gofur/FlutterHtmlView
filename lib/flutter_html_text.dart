@@ -321,7 +321,6 @@ class HtmlParser {
           String text = match[0]
             ..replaceAll(new RegExp('<!--(.*?)-->'), '\$1'),
             ..replaceAll('&nbsp;', ' ')
-            ..replaceAll('<li>','&bull;')
             ..replaceAll('<br />', '<br>')  
             ..replaceAll(new RegExp('<!\[CDATA\[(.*?)]]>'), '\$1');
 
